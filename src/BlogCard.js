@@ -1,9 +1,15 @@
-const BlogCard = () => {
-    return (
-        <div className="BlogCard">
+import { Link } from "react-router-dom";
+import "./CSS/BlogCard.css";
 
-        </div>
-    )
-}
+const BlogCard = ({ id, title, subtitle }) => {
+  return (
+    <Link to={`/${id}`} style={{ textDecoration: 'none' }}>
+      <div className="BlogCard">
+        <p id="title">{title}</p>
+        <p>{subtitle}</p>
+      </div>
+    </Link>
+  );
+};
 
-export default BlogCard
+export default BlogCard;

@@ -9,7 +9,7 @@ function Routes() {
       <Route exact path="/new">
         <NewPost />
       </Route>
-      <Route exact path="/:postId">
+      <Route exact path="/:postID">
         <PostView />
       </Route>
       <Route exact path="/">

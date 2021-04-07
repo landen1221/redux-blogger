@@ -1,0 +1,37 @@
+.NewPost {
+  margin-top: 20px;
+  width: 50%;
+  margin: 25px auto;
+  text-align: left;
+}
+
+.NewPost input {
+  display: block;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.NewPost textarea {
+  display: block;
+  width: 100%;
+  margin-bottom: 25px;
+}
+
+.NewPost label {
+  font-weight: bold;
+  margin-left: 5px;
+  color: rgb(56, 56, 56);
+  font-size: 0.85em;
+}
+
+.NewPost button {
+  padding: 5px 10px;
+}
+
+.NewPost h2 {
+    text-align: center;
+}
+
+.submitButton {
+    text-align: right;
+}

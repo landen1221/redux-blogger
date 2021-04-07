@@ -1,0 +1,15 @@
+.BlogCard {
+  width: 50%;
+  border: 2px solid blue;
+  margin: 10px auto;
+  background-color: whitesmoke;
+}
+
+.BlogCard p {
+    color: black;
+}
+
+#title {
+    color: blue;
+    text-decoration: underline;
+}
