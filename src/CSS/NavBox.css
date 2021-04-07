@@ -1,0 +1,17 @@
+.NavBox {
+    background-color: white;
+    padding: 1px;
+    padding-bottom: 15px;
+}
+
+.NavBox a {
+    margin-left: 15px;
+}
+
+.NavBox h1 {
+    margin-bottom: 0;
+}
+
+.NavBox p {
+    margin: 5px 0;
+}
