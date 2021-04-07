@@ -1,3 +1,4 @@
+import { useHistory } from "react-router-dom";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import "./CSS/NewPost.css";
@@ -5,29 +6,33 @@ import "./CSS/NewPost.css";
 import SubmitButton from "./Buttons/SubmitButton";
 import CancelButton from "./Buttons/CancelButton";
 
-const NewPost = () => {
+const NewPost = ({ currBlog }) => {
+  let history = useHistory();
   const INITIAL_STATE = {
     title: "",
     subtitle: "",
     body: "",
   };
 
-  const [formData, setFormData] = useState(INITIAL_STATE);
+  const [formData, setFormData] = useState(
+    currBlog ? currBlog[0] : INITIAL_STATE
+  );
 
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData((formData) => ({ ...formData, [name]: value }));
   };
 
+  //   FIXME: handle state change
   const handleSubmit = (e) => {
     e.preventDefault();
-    // setFormData(INITIAL_STATE)
     console.log("Form Submitted");
+    history.push("/");
   };
 
   return (
     <div className="NewPost">
-      <h2>New Post</h2>
+      {currBlog ? <h2>Edit Post</h2> : <h2>New Post</h2>}
       <form>
         <label htmlFor="title">Title:</label>
         <input
@@ -38,7 +43,6 @@ const NewPost = () => {
         />
         <label htmlFor="subtitle">Subtitle:</label>
         <input
-
           name="subtitle"
           placeholder="Subtitle / Brief Description"
           value={formData.subtitle}

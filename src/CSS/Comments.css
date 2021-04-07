@@ -1,0 +1,23 @@
+.Comments {
+    text-align: left;
+    width: 75%;
+    margin: auto;
+}
+
+.Comments p {
+    margin-left: 10px;
+}
+
+.Comments button {
+    margin-left: 15px;
+    background-color: rgb(172, 215, 243);
+}
+
+.Comments form {
+    margin: 15px 20px;
+}
+
+.Comments input {
+    width: 75%;
+    padding: 10px;
+}
