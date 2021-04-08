@@ -6,6 +6,8 @@ import "./CSS/NewPost.css";
 import SubmitButton from "./Buttons/SubmitButton";
 import CancelButton from "./Buttons/CancelButton";
 
+
+// FIXME: action = ADD_OR_EDIT_POST
 const NewPost = ({ currBlog }) => {
   let history = useHistory();
   const INITIAL_STATE = {
